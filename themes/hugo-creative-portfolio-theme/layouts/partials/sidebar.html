@@ -17,7 +17,7 @@
         {{ with .Site.Params.copyright }}
           {{ . | safeHTML }}
         {{ end }}
-        {{ partial "attribution.html" . }}
+        <p style='font-size:5px;'>{{ partial "attribution.html" . }}</p>
       </p>
     </div>
   </div>
