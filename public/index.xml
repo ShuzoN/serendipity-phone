@@ -2,13 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Serendipity Phone</title>
-    <link>http://example.org/</link>
+    <link>https://serendipityphone.jp/</link>
     <description>Recent content on Serendipity Phone</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ja</language>
+    <lastBuildDate>Fri, 18 May 2018 00:41:51 +0900</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://serendipityphone.jp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://serendipityphone.jp/post/welcome/</link>
+      <pubDate>Fri, 18 May 2018 00:41:51 +0900</pubDate>
+      
+      <guid>https://serendipityphone.jp/post/welcome/</guid>
+      <description>h1 ダミー</description>
+    </item>
     
   </channel>
 </rss>
