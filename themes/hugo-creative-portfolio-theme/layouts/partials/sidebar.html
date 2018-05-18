@@ -17,6 +17,7 @@
         {{ with .Site.Params.copyright }}
           {{ . | safeHTML }}
         {{ end }}
+        <p>{{ partial "shuzon_github.html" . }}</p>
         <p style='font-size:5px;'>{{ partial "attribution.html" . }}</p>
       </p>
     </div>
