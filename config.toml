@@ -1,6 +1,29 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
+baseURL = "https://serendipityphone.jp"
+languageCode = "ja"
 title = "Serendipity Phone"
 theme = "hugo-creative-portfolio-theme"
 hasCJKLanguage = "true"
 
+[params]
+  style = "default"
+  SubTitle = "Meet the best head phone"
+  Author = "Shuzo Nakamura"
+  Email = "d.namu.r21@gmail.com"
+  copyright = "Copyright: © 2018- Serendipity Phone in Tokyo, Japan"
+
+  sidebarAbout = [
+    "find the best head phone in your life",
+  ]
+
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Home"
+  url = "post/welcome/"
+  home = true
+
+  [params.social]
+  facebook      = "https://www.facebook.com/nakamura.syuzo"
+  email         = "d.namu.r21@gmail.com"
+  twitter       = "https://twitter.com/namu_r21"
+  instagram     = "https://www.instagram.com/shuzon21/"
+  github        = "https://github.com/shuzon"
