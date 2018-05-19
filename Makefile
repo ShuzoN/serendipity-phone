@@ -6,3 +6,6 @@ server:
 
 build:
 	$(HUGO) -t $(THEME)
+
+open:
+	open "/Applications/Google Chrome.app"  "http://localhost:1313/headphone"
