@@ -18,11 +18,13 @@ weight = 1
 
 **Product Specification**  
 
-System: Dynamic  
-Design: Closed-Back  
-Weight: 286g  
-Impedance: 46Ω    
-Plug: stereo mini (3.5mm)  
+<div id="spec">
+<p>System: {{ system }}</p>
+<p>Design: {{ design }}</p>
+<p>Weight: {{ weight }}</p>
+<p>Impedance: {{ impedance }}</p>
+<p>Plug: {{ plug }}</p>
+</div>
 
 ![phone][1]
 
@@ -46,6 +48,11 @@ Plug: stereo mini (3.5mm)
 </table>
 </div>
 
+{{ partial "pages_link_table.html" . }}
+{{ partial "sidebar.html" . }}
+
+
+
 ---
 
 #### Sound 
@@ -56,3 +63,15 @@ Plug: stereo mini (3.5mm)
 
 ---
 
+<script>
+var spec= new Vue({
+  el: '#spec',
+  data: {
+    system: "Dynamic",
+    design: "Closed-Back",
+    weight: "286g",
+    impedance: "46Ω",
+    plug: "stereo mini (3.5mm)",
+  }
+})
+</script>

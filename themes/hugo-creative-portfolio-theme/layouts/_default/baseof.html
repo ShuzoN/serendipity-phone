@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
 <head>{{ partial "head.html" . }}</head>
 <body>
+  {{ partial "scripts.html" . }}
   <div id="all">
       <div class="container-fluid">
           <div class="row row-offcanvas row-offcanvas-left">
@@ -11,6 +12,5 @@
           </div>
       </div>
   </div>
-  {{ partial "scripts.html" . }}
 </body>
 </html>
