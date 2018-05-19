@@ -29,7 +29,7 @@ Plug: stereo mini (3.5mm)
 <table>
 <thead>
 <tr>
-<td><a href="https://www.shure.co.jp/products/headphones/srh1540">Official Page</a></td>
+<td><a href="http://akg.harman-japan.co.jp/product.php?id=k52">Official Page</a></td>
 <td>
 <a href="https://www.amazon.co.jp/AKG-K52/dp/B06XT8DLZV">
 <img alt="amazon" src="/img/logo/amazon_logo.png" height="30px" />
