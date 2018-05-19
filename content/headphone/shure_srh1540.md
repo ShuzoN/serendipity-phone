@@ -7,6 +7,12 @@ showonlyimage = false
 weight = 1
 +++
 
+[1]: /img/headphone/shure_srh1540.jpg
+
+<p class="txtR">from: ¥40000</p>  
+
+<!--more-->
+
 ---
 
 
@@ -17,10 +23,6 @@ Design: Closed-Back
 Weight: 286g  
 Impedance: 46Ω    
 Plug: stereo mini (3.5mm)  
-
-<p class="txtR">from: ¥40000</p>  
-
-<!--more-->
 
 ![phone][1]
 
@@ -54,5 +56,3 @@ Plug: stereo mini (3.5mm)
 
 ---
 
-
-[1]: /img/headphone/shure_srh1540.jpg

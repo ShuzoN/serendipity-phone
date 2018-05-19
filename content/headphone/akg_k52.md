@@ -3,25 +3,24 @@ date = "2018-05-19T16:00:00+09:00"
 title = "AKG K52"
 draft = false
 image = "img/headphone/akg_k52.jpg"
-showonlyimage = true
+showonlyimage = false
 weight = 1
 +++
 [1]: /img/headphone/akg_k52.jpg
 
+
+<p class="txtR">¥5600</p>  
+
+<!--more-->
+
 ---
-
-
 **Product Specification**  
 
 System: Dynamic  
 Design: Closed-Back  
-Weight: 200g
+Weight: 200g  
 Impedance: 32Ω    
 Plug: stereo mini (3.5mm)  
-
-<p class="txtR">from: ¥5600</p>  
-
-<!--more-->
 
 ![phone][1]
 
@@ -48,6 +47,8 @@ Plug: stereo mini (3.5mm)
 ---
 
 #### Sound 
+
+zoom h5 track 19 20
 
 <div class="center">
   <iframe width="320" height="200" src="https://www.youtube.com/embed/aAPlpMPoP3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
