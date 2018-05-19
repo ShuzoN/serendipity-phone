@@ -1,0 +1,27 @@
+table {
+    width: 640px;
+    border-spacing: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+th, td {
+    text-align: center;
+    padding: 5px;
+}
+#pages table { width: 100%; border:none; padding: 10px;}
+#pages tr {
+    display: block;
+}
+#pages td {
+    margin: 5%;
+    border-bottom: none;
+    display: inline-block;
+    padding: 0;
+}
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+.txtR {
+    text-align: right;
+}

@@ -13,12 +13,14 @@ hasCJKLanguage = "true"
 
   sidebarAbout = [
     "find the best head phone in your life",
+    "1. choose head phone",
+    "2. listen it!",
   ]
 
   # Nav links in the side bar
   [[params.navlinks]]
   name = "Home"
-  url = "headphone/"
+  url = "/headphone/"
   home = true
 
   [params.social]
