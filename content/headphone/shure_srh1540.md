@@ -48,10 +48,6 @@ weight = 1
 </table>
 </div>
 
-{{ partial "pages_link_table.html" . }}
-{{ partial "sidebar.html" . }}
-
-
 
 ---
 
