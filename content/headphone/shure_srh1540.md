@@ -21,28 +21,8 @@ weight = 1
 
 ![phone][1]
 
-<div id="pages">
-<table>
-<thead>
-<tr>
-<td>
-<a href="https://www.shure.co.jp/products/headphones/srh1540">
-<div>Official Page</div>
-</a>
-</td>
-<td>
-<a href="https://www.amazon.co.jp/SHURE-%E3%83%98%E3%83%83%E3%83%89%E3%83%9B%E3%83%B3-%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA%E7%94%A8-SRH1540-%E3%80%90%E5%9B%BD%E5%86%85%E6%AD%A3%E8%A6%8F%E5%93%81%E3%80%91/dp/B00H1FIJBY">
-<img alt="amazon" src="/img/logo/amazon_logo.png" height="30px" />
-</a>
-</td>
-<td>
-<a href="http://www.e-earphone.jp/shop/shopdetail.html?brandcode=002003000012&search=srh1540&sort=price_desc">
-<img alt="e☆イヤホン" src="/img/logo/e_iyahon.png" height="30px" />
-</a>
-</td>
-</tr>
-</thead>
-</table>
+<div id="page-links">
+<page-link v-bind:link="link" ></page-link>
 </div>
 
 
@@ -84,4 +64,43 @@ new Vue({
       }
   }
 });
+
+
+Vue.component('page-link', {
+  props: ['link'],
+  template: `
+  <table>
+  <tr>
+  <td>
+  <a v-bind:href="link.official">
+  <div>Official Page</div>
+  </a>
+  </td>
+  <td>
+  <a v-bind:href="link.amazon">
+  <img alt="amazon" src="/img/logo/amazon_logo.png" height="30px" />
+  </a>
+  </td>
+  <td>
+  <a v-bind:href="link.eIyahon">
+  <img alt="e☆イヤホン" src="/img/logo/e_iyahon.png" height="30px" />
+  </a>
+  </td>
+  </tr>
+  </table>
+  `
+});
+
+new Vue({
+  el: '#page-links',
+  data: {
+    link:
+      {
+        official: "https://www.shure.co.jp/products/headphones/srh1540",
+        amazon: "https://www.amazon.co.jp/SHURE-%E3%83%98%E3%83%83%E3%83%89%E3%83%9B%E3%83%B3-%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA%E7%94%A8-SRH1540-%E3%80%90%E5%9B%BD%E5%86%85%E6%AD%A3%E8%A6%8F%E5%93%81%E3%80%91/dp/B00H1FIJBY",
+        eIyahon: "http://www.e-earphone.jp/shop/shopdetail.html?brandcode=002003000012&search=srh1540&sort=price_desc"
+      }
+  }
+});
+
 </script>
