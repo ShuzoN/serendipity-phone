@@ -15,15 +15,8 @@ weight = 1
 
 ---
 
-
-**Product Specification**  
-
 <div id="spec">
-<p>System: {{ system }}</p>
-<p>Design: {{ design }}</p>
-<p>Weight: {{ weight }}</p>
-<p>Impedance: {{ impedance }}</p>
-<p>Plug: {{ plug }}</p>
+<product-specification v-bind:spec="spec" ></product-specification>
 </div>
 
 ![phone][1]
@@ -60,14 +53,31 @@ weight = 1
 ---
 
 <script>
-var spec= new Vue({
+Vue.component('product-specification', {
+  props: ['spec'],
+  template: `
+  <div>
+    <p><strong>Product Specification</strong></p>  
+    <p>System: {{ spec.system }}</p>
+    <p>Design: {{ spec.design }}</p>
+    <p>Weight: {{ spec.weight }}</p>
+    <p>Impedance: {{ spec.impedance }}</p>
+    <p>Plug: {{ spec.plug }}</p>
+  </div>
+  `
+});
+
+new Vue({ 
   el: '#spec',
   data: {
-    system: "Dynamic",
-    design: "Closed-Back",
-    weight: "286g",
-    impedance: "46Ω",
-    plug: "stereo mini (3.5mm)",
+    spec: 
+      {
+        system: "Dynamic",
+        design: "Closed-Back",
+        weight: "286g",
+        impedance: "46Ω",
+        plug: "stereo mini (3.5mm)"
+      }
   }
-})
+});
 </script>
