@@ -34,11 +34,19 @@ weight = 1
   <iframe width="320" height="200" src="https://www.youtube.com/embed/aAPlpMPoP3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
+<div id="sound-videos">
+<sound-video
+  v-for="link in links"
+  v-bind:link="link"
+></sound-video>
+</div>
 
 ---
 
 <script src="/js/headphone/page-links.js"></script>
 <script src="/js/headphone/spec.js"></script>
+<script src="/js/headphone/sound-video.js"></script>
+
 <script>
 new Vue({ 
   el: '#spec',
@@ -63,6 +71,16 @@ new Vue({
         amazon: "https://www.amazon.co.jp/SHURE-%E3%83%98%E3%83%83%E3%83%89%E3%83%9B%E3%83%B3-%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA%E7%94%A8-SRH1540-%E3%80%90%E5%9B%BD%E5%86%85%E6%AD%A3%E8%A6%8F%E5%93%81%E3%80%91/dp/B00H1FIJBY",
         eIyahon: "http://www.e-earphone.jp/shop/shopdetail.html?brandcode=002003000012&search=srh1540&sort=price_desc"
       }
+  }
+});
+
+new Vue({
+  el: '#sound-videos',
+  data: {
+    links: [
+      { video: "https://www.youtube.com/embed/aAPlpMPoP3Q" },
+      { video: "https://www.youtube.com/embed/aAPlpMPoP3Q" }
+    ]
   }
 });
 
