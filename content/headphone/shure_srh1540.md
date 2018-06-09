@@ -34,23 +34,12 @@ weight = 1
   <iframe width="320" height="200" src="https://www.youtube.com/embed/aAPlpMPoP3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
+
 ---
 
+<script src="/js/headphone/page-links.js"></script>
+<script src="/js/headphone/spec.js"></script>
 <script>
-Vue.component('product-specification', {
-  props: ['spec'],
-  template: `
-  <div>
-    <p><strong>Product Specification</strong></p>  
-    <p>System: {{ spec.system }}</p>
-    <p>Design: {{ spec.design }}</p>
-    <p>Weight: {{ spec.weight }}</p>
-    <p>Impedance: {{ spec.impedance }}</p>
-    <p>Plug: {{ spec.plug }}</p>
-  </div>
-  `
-});
-
 new Vue({ 
   el: '#spec',
   data: {
@@ -63,32 +52,6 @@ new Vue({
         plug: "stereo mini (3.5mm)"
       }
   }
-});
-
-
-Vue.component('page-link', {
-  props: ['link'],
-  template: `
-  <table>
-    <tr>
-      <td>
-        <a v-bind:href="link.official">
-          <div>Official Page</div>
-        </a>
-      </td>
-      <td>
-        <a v-bind:href="link.amazon">
-          <img alt="amazon" src="/img/logo/amazon_logo.png" height="30px" />
-        </a>
-      </td>
-      <td>
-        <a v-bind:href="link.eIyahon">
-          <img alt="e☆イヤホン" src="/img/logo/e_iyahon.png" height="30px" />
-        </a>
-      </td>
-    </tr>
-  </table>
-  `
 });
 
 new Vue({
