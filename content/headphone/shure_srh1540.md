@@ -30,10 +30,6 @@ weight = 1
 
 #### Sound 
 
-<div class="center">
-  <iframe width="320" height="200" src="https://www.youtube.com/embed/aAPlpMPoP3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-
 <div id="sound-videos">
 <sound-video
   v-for="link in links"
