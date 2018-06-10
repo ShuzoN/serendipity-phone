@@ -14,45 +14,67 @@ weight = 1
 
 ---
 
-**Product Specification**  
-
-System: Dynamic  
-Design: Closed-Back  
-Weight: 200g  
-Impedance: 63Ω  
-Plug: stereo Standard
-
-
 ![phone][1]
 
-<div id="pages">
-<table>
-<thead>
-<tr>
-<td><a href="http://www.smci.jp/s/headp/page/cd900st">Official Page</a></td>
-<td>
-<a href="https://www.amazon.co.jp/dp/B000UPEJCU">
-<img alt="amazon" src="/img/logo/amazon_logo.png" height="30px" />
-</a>
-</td>
-<td>
-<a href="http://www.e-earphone.jp/MDR-CD900ST">
-<img alt="e☆イヤホン" src="/img/logo/e_iyahon.png" height="30px" />
-</a>
-</td>
-</tr>
-</thead>
-</table>
+<div id="page-links">
+<page-link v-bind:link="link" ></page-link>
 </div>
 
 ---
 
 #### Sound 
 
-<div class="center">
-  <iframe width="320" height="200" src="https://www.youtube.com/embed/aAPlpMPoP3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div id="sound-videos">
+<sound-video
+  v-for="link in links"
+  v-bind:link="link"
+></sound-video>
 </div>
 
 ---
 
+<div id="spec">
+<product-specification v-bind:spec="spec" ></product-specification>
+</div>
 
+<script src="/js/headphone/page-links.js"></script>
+<script src="/js/headphone/spec.js"></script>
+<script src="/js/headphone/sound-video.js"></script>
+
+<script>
+new Vue({
+  el: '#spec',
+  data: {
+    spec:
+      {
+        system: "Dynamic",
+        design: "Closed-Back",
+        weight: "200g",
+        impedance: "63Ω",
+        plug: "Stereo Standard"
+      }
+  }
+});
+
+new Vue({
+  el: '#page-links',
+  data: {
+    link:
+      {
+        official: "http://www.smci.jp/s/headp/page/cd900st",
+        amazon: "https://www.amazon.co.jp/dp/B000UPEJCU",
+        eIyahon: "http://www.e-earphone.jp/shop/shopdetail.html?brandcode=002014000005&search=900st&sort=price_desc"
+      }
+  }
+});
+
+new Vue({
+  el: '#sound-videos',
+  data: {
+    links: [
+      { video: "https://www.youtube.com/embed/aAPlpMPoP3Q" },
+    ]
+  }
+});
+
+</script>
