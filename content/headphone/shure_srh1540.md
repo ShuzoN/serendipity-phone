@@ -75,7 +75,6 @@ new Vue({
   data: {
     links: [
       { video: "https://www.youtube.com/embed/aAPlpMPoP3Q" },
-      { video: "https://www.youtube.com/embed/aAPlpMPoP3Q" }
     ]
   }
 });
