@@ -14,46 +14,68 @@ weight = 1
 <!--more-->
 
 ---
-**Product Specification**  
-
-System: Dynamic  
-Design: Closed-Back  
-Weight: 200g  
-Impedance: 32Ω    
-Plug: stereo mini (3.5mm)  
 
 ![phone][1]
 
-<div id="pages">
-<table>
-<thead>
-<tr>
-<td><a href="http://akg.harman-japan.co.jp/product.php?id=k52">Official Page</a></td>
-<td>
-<a href="https://www.amazon.co.jp/AKG-K52/dp/B06XT8DLZV">
-<img alt="amazon" src="/img/logo/amazon_logo.png" height="30px" />
-</a>
-</td>
-<td>
-<a href="http://www.e-earphone.jp/akg/k52">
-<img alt="e☆イヤホン" src="/img/logo/e_iyahon.png" height="30px" />
-</a>
-</td>
-</tr>
-</thead>
-</table>
+<div id="page-links">
+<page-link v-bind:link="link" ></page-link>
 </div>
 
 ---
 
 #### Sound 
 
-zoom h5 track 19 20
-
-<div class="center">
-  <iframe width="320" height="200" src="https://www.youtube.com/embed/aAPlpMPoP3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div id="sound-videos">
+<sound-video
+  v-for="link in links"
+  v-bind:link="link"
+></sound-video>
 </div>
 
 ---
 
+<div id="spec">
+<product-specification v-bind:spec="spec" ></product-specification>
+</div>
 
+<script src="/js/headphone/page-links.js"></script>
+<script src="/js/headphone/spec.js"></script>
+<script src="/js/headphone/sound-video.js"></script>
+
+<script>
+new Vue({ 
+  el: '#spec',
+  data: {
+    spec: 
+      {
+        system: "Dynamic",
+        design: "Closed-Back",
+        weight: "200",
+        impedance: "32Ω",
+        plug: "stereo mini (3.5mm)"
+      }
+  }
+});
+
+new Vue({
+  el: '#page-links',
+  data: {
+    link:
+      {
+        official:"http://akg.harman-japan.co.jp/product.php?id=k52",
+        amazon:"https://www.amazon.co.jp/AKG-K52/dp/B06XT8DLZV",
+        eIyahon:"http://www.e-earphone.jp/akg/k52"
+      }
+  }
+});
+
+new Vue({
+  el: '#sound-videos',
+  data: {
+    links: [
+      { video: "https://www.youtube.com/embed/aAPlpMPoP3Q" },
+    ]
+  }
+});
+
+</script>
