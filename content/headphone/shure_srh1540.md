@@ -15,10 +15,6 @@ weight = 1
 
 ---
 
-<div id="spec">
-<product-specification v-bind:spec="spec" ></product-specification>
-</div>
-
 ![phone][1]
 
 <div id="page-links">
@@ -38,6 +34,10 @@ weight = 1
 </div>
 
 ---
+
+<div id="spec">
+<product-specification v-bind:spec="spec" ></product-specification>
+</div>
 
 <script src="/js/headphone/page-links.js"></script>
 <script src="/js/headphone/spec.js"></script>
