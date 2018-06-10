@@ -1,5 +1,6 @@
 Vue.component('page-link', {
   props: ['link'],
+  delimiters: ['${', '}'],
   template: `
   <table>
     <tr>
