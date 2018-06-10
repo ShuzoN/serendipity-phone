@@ -25,18 +25,15 @@ weight = 1
 
 #### Sound 
 
-<div id="sound-videos">
-<sound-video
-  v-for="link in links"
-  v-bind:link="link"
-></sound-video>
+
+<div id="audio-tracks">
+<audio-track
+  v-for="track in tracks"
+  v-bind:track="track"
+></audio-track>
 </div>
 
-Alan Walker - Faded
-
-<iframe src="https://www.youtube.com/embed/60ItHLz5WEA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-<iframe src="https://drive.google.com/file/d/1LHAf5gSpgM9Hx-RIwgdyl_S5uNnrgWj9/preview" width="400" height="70"></iframe>
+This site uses NCS release audio.
 
 ---
 
@@ -46,7 +43,7 @@ Alan Walker - Faded
 
 <script src="/js/headphone/page-links.js"></script>
 <script src="/js/headphone/spec.js"></script>
-<script src="/js/headphone/sound-video.js"></script>
+<script src="/js/headphone/audio-track.js"></script>
 
 <script>
 new Vue({ 
@@ -76,10 +73,14 @@ new Vue({
 });
 
 new Vue({
-  el: '#sound-videos',
+  el: '#audio-tracks',
   data: {
-    links: [
-      { video: "https://www.youtube.com/embed/aAPlpMPoP3Q" },
+    tracks: [
+      {
+        title: "Alan Walker - Faded",
+        video: "https://www.youtube.com/embed/60ItHLz5WEA",
+        viewingTrack: "https://drive.google.com/uc?authuser=0&id=1LHAf5gSpgM9Hx-RIwgdyl_S5uNnrgWj9&export=download"
+      },
     ]
   }
 });
