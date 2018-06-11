@@ -7,10 +7,12 @@ Vue.component('audio-track', {
   <div class="center">
     <table>
       <tr>
-        <iframe v-bind:src="track.video"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </tr>
-      <tr>
-        <audio v-bind:src="track.viewingTrack" controls controlsList="nodownload">
+        <td>
+          <iframe v-bind:src="track.video"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+        <td>
+          <iframe width="250px" frameborder="no" v-bind:src="track.viewingTrack"></iframe>
+        </td>
       </tr>
     </table>
   </div>

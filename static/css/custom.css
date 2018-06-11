@@ -6,15 +6,15 @@ table {
 th, td {
     text-align: center;
 }
-#pages table {
+table {
   width: 100%;
   border:none;
   padding: 10px;
 }
-#pages tr {
+tr {
     display: block;
 }
-#pages td {
+td {
     margin: 5%;
     border-bottom: none;
     display: inline-block;

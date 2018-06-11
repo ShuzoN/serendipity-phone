@@ -25,7 +25,6 @@ weight = 1
 
 #### Sound 
 
-
 <div id="audio-tracks">
 <audio-track
   v-for="track in tracks"
@@ -78,8 +77,8 @@ new Vue({
     tracks: [
       {
         title: "Alan Walker - Faded",
-        video: "https://www.youtube.com/embed/60ItHLz5WEA",
-        viewingTrack: "https://drive.google.com/uc?authuser=0&id=1LHAf5gSpgM9Hx-RIwgdyl_S5uNnrgWj9&export=download"
+        video: "https://www.youtube.com/embed/" + "bM7SZ5SBzyY",
+        viewingTrack: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+ "456916059"
       },
     ]
   }
