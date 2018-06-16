@@ -24,12 +24,14 @@ weight = 1
 
 #### Sound 
 
-<div id="sound-videos">
-<sound-video
-  v-for="link in links"
-  v-bind:link="link"
-></sound-video>
+<div id="audio-tracks">
+<audio-track
+  v-for="track in tracks"
+  v-bind:track="track"
+></audio-track>
 </div>
+
+This site uses NCS release audio.
 
 ---
 
@@ -39,7 +41,7 @@ weight = 1
 
 <script src="/js/headphone/page-links.js"></script>
 <script src="/js/headphone/spec.js"></script>
-<script src="/js/headphone/sound-video.js"></script>
+<script src="/js/headphone/audio-track.js"></script>
 
 <script>
 new Vue({
@@ -69,10 +71,14 @@ new Vue({
 });
 
 new Vue({
-  el: '#sound-videos',
+  el: '#audio-tracks',
   data: {
-    links: [
-      { video: "https://www.youtube.com/embed/aAPlpMPoP3Q" },
+    tracks: [
+      {
+        title: "Alan Walker - Faded",
+        video: "https://www.youtube.com/embed/" + "bM7SZ5SBzyY",
+        viewingTrack: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+ "456916059"
+      },
     ]
   }
 });
