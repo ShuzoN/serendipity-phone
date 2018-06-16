@@ -32,6 +32,7 @@ weight = 1
 ></audio-track>
 </div>
 
+
 This site uses NCS release audio.
 
 ---
@@ -40,9 +41,10 @@ This site uses NCS release audio.
 <product-specification v-bind:spec="spec" ></product-specification>
 </div>
 
-<script src="/js/headphone/page-links.js"></script>
 <script src="/js/headphone/spec.js"></script>
 <script src="/js/headphone/audio-track.js"></script>
+
+{{< page-link >}}
 
 <script>
 new Vue({ 
