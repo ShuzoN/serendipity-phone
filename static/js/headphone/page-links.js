@@ -4,17 +4,17 @@ Vue.component('page-link', {
   template: `
   <table>
     <tr>
-      <td>
-        <a v-bind:href="link.official">
+      <td v-if="link.official">
+        <a v-if="link.official" v-bind:href="link.official">
           <div>Official Page</div>
         </a>
       </td>
-      <td>
+      <td v-if="link.amazon">
         <a v-bind:href="link.amazon">
           <img alt="amazon" src="/img/logo/amazon_logo.png" height="30px" />
         </a>
       </td>
-      <td>
+      <td v-if="link.eIyahon">
         <a v-bind:href="link.eIyahon">
           <img alt="e☆イヤホン" src="/img/logo/e_iyahon.png" height="30px" />
         </a>
