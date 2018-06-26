@@ -76,7 +76,7 @@ new Vue({
   data: {
     tracks: [
       {
-        title: "Alan Walker - Faded",
+        title: "Alan Walker - Fade",
         video: "https://www.youtube.com/embed/" + "bM7SZ5SBzyY",
         viewingTrack: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+ "456916059"
       },
