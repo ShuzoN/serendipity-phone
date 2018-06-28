@@ -32,8 +32,6 @@ weight = 1
 ></audio-track>
 </div>
 
-This site uses NCS release audio.
-
 ---
 
 <div id="spec">
