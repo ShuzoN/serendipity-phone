@@ -3,6 +3,8 @@ languageCode = "ja"
 title = "Serendipity Phone"
 theme = "hugo-creative-portfolio-theme"
 hasCJKLanguage = "true"
+baseurl = "https://shuzon.github.io/serendipity-phone"
+canonifyurls = true
 
 [params]
   style = "default"
