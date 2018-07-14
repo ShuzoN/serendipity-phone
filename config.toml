@@ -21,7 +21,7 @@ hasCJKLanguage = true
   # Nav links in the side bar
   [[params.navlinks]]
   name = "Home"
-  url = "/headphone/"
+  url = "/serendipity-phone/headphone/"
   home = true
 
   [params.social]
