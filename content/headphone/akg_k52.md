@@ -2,7 +2,7 @@
 date = "2018-05-19T16:00:00+09:00"
 title = "AKG K52"
 draft = false
-image = "img/headphone/akg_k52.jpg"
+image = "/img/headphone/akg_k52.jpg"
 showonlyimage = false
 weight = 1
 +++
