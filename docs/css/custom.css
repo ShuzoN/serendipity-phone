@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    border-spacing: 0;
+    text-align: center;
+}
+th, td {
+    text-align: center;
+}
+table {
+  width: 100%;
+  border:none;
+  padding: 10px;
+}
+tr {
+    display: block;
+}
+td {
+    margin: 5%;
+    border-bottom: none;
+    display: inline-block;
+}
+.center {
+    text-align: center;
+}
+.txtR {
+    text-align: right;
+}

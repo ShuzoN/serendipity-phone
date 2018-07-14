@@ -9,3 +9,6 @@ build:
 
 open:
 	open "/Applications/Google Chrome.app"  "http://localhost:1313/headphone"
+
+publish: build
+	cp -rv public/* docs
