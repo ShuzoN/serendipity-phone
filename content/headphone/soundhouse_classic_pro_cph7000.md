@@ -2,7 +2,7 @@
 date = "2018-05-19T16:00:00+09:00"
 title = "SOUND HOUSE CLASSIC PRO CHP7000"
 draft = false
-image = "img/headphone/soundhouse_cph7000.jpg"
+image = "/img/headphone/soundhouse_cph7000.jpg"
 showonlyimage = false
 weight = 1
 +++

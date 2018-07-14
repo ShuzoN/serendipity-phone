@@ -2,7 +2,7 @@
 date = "2018-05-19T16:00:00+09:00"
 title = "SONY MDR-CD900ST"
 draft = false
-image = "img/headphone/sony_mdr_cd900st.jpg"
+image = "/img/headphone/ony_mdr_cd900st.jpg"
 showonlyimage = false
 weight = 1
 +++
