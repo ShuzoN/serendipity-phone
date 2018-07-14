@@ -3,7 +3,7 @@ languageCode = "ja"
 title = "Serendipity Phone"
 baseurl = "https://shuzon.github.io/serendipity-phone"
 canonifyurls = true
-hasCJKLanguage = "true"
+hasCJKLanguage = true
 
 [params]
   style = "default"
