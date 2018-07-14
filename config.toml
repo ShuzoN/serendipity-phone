@@ -1,10 +1,9 @@
-baseURL = "https://serendipityphone.jp"
+theme = "hugo-creative-portfolio-theme"
 languageCode = "ja"
 title = "Serendipity Phone"
-theme = "hugo-creative-portfolio-theme"
-hasCJKLanguage = "true"
 baseurl = "https://shuzon.github.io/serendipity-phone"
 canonifyurls = true
+hasCJKLanguage = "true"
 
 [params]
   style = "default"
