@@ -18,7 +18,7 @@ hasCJKLanguage = true
     "2. Just listen it!",
   ]
 
-  home = "headphone"
+  home = "/headphone"
 
   # Nav links in the side bar
   [[params.navlinks]]
