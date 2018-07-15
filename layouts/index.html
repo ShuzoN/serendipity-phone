@@ -1,0 +1,8 @@
+<head> 
+    {{ $baseUrl := .Site.BaseURL }}
+    {{ range .Site.Params.navlinks }}
+    {{ if .home }}
+    <meta http-equiv="refresh" content="0; URL={{ $baseUrl }}{{ .url | safeHTML }}" />
+    {{ end }}
+    {{ end }}
+  </head>
