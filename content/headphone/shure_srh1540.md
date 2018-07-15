@@ -17,7 +17,6 @@ weight = 1
 
 ![phone][1]
 
-
 <img src="/img/vgp/2016award.jpg" alt="vgp2016award" width="80px" style="float: left;" />
 
 <div id="page-links">
