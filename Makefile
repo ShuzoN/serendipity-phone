@@ -10,5 +10,6 @@ build:
 open:
 	open "/Applications/Google Chrome.app"  "http://localhost:1313/headphone"
 
-publish: build
+publish: 
+	$(MAKE) build
 	cp -rvf public/* docs/
