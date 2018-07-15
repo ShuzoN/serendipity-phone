@@ -12,4 +12,4 @@ open:
 
 publish: 
 	$(MAKE) build
-	cp -rvf public/* docs/
+	cp -rv public/* docs/
