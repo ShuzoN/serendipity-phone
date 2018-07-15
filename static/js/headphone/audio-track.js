@@ -4,18 +4,19 @@ Vue.component('audio-track', {
   template: `
 <div>
   <div class="center">
-    <table>
-      <tr>
-        <td>
-          <iframe width="250px" frameborder="no" v-bind:src="track.viewingTrack"></iframe>
-        </td>
-        <td>
-          <iframe v-bind:src="track.video"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </td>
-      </tr>
-    </table>
+    <iframe width="250px" frameborder="no" v-bind:src="track.viewingTrack"></iframe>
   </div>
-  <p>This site uses NCS release audio. Sample track includes "Alan Walker - Fade"</p>
+  <p class="mTpx5">This site uses NCS release audio.</p>
+
+  <h5>Sample Tracks</h5>
+  <ul>
+    <li>
+      <a href="https://www.youtube.com/watch?v=bM7SZ5SBzyY">Alan Walker - Fade</a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/audiolibrary/music">YouTube Audio Library</a>
+    </li>
+  </ul>
 </div>
   `
 });
