@@ -1,6 +1,6 @@
 +++
 date = "2018-05-18T20:08:00+09:00"
-title = "Shure srh1540"
+title = "SHURE SRH1540"
 draft = false
 image = "/img/headphone/shure_srh1540.jpg"
 showonlyimage = false
