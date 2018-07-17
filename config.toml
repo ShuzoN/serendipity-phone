@@ -4,6 +4,7 @@ title = "Serendipity Phone"
 baseurl = "https://shuzon.github.io/serendipity-phone"
 canonifyurls = true
 hasCJKLanguage = true
+googleAnalytics = "UA-122473081-1"
 
 [params]
   style = "default"
