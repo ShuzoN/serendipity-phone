@@ -1,6 +1,6 @@
 +++
 date = "2018-05-18T20:08:00+09:00"
-title = "Shure srh1540"
+title = "SHURE SRH1540"
 draft = false
 image = "/img/headphone/shure_srh1540.jpg"
 showonlyimage = false
@@ -76,7 +76,7 @@ new Vue({
   data: {
     tracks: [
       {
-        viewingTrack: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+ "456916059"
+        viewingTrack: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+ "472375815"
       },
     ]
   }
