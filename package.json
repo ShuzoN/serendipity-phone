@@ -6,11 +6,6 @@
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {
-    "npm": "^6.2.0",
-    "vue-flickity": "^1.1.2"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ShuzoN/serendipity-phone/issues"
   },
-  "homepage": "https://github.com/ShuzoN/serendipity-phone#readme"
+  "homepage": "https://github.com/ShuzoN/serendipity-phone#readme",
+  "dependencies": {
+    "vue-flickity": "^1.1.2"
+  }
 }
