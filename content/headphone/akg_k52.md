@@ -15,8 +15,8 @@ weight = 1
 ---
 
 <div id="app">
-  <v-app id="inspire">
-    <v-carousel hide-delimiters light>
+  <v-app id="inspire" style="height:700px;">
+    <v-carousel light hide-delimiters style="height:700px;">
       <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
@@ -59,7 +59,7 @@ new Vue({
     return {
       items: [
         { src: '/serendipity-phone/img/headphone/akg_k52.jpg' },
-        { src: '/serendipity-phone/img/headphone/akg_k52.jpg' }
+        { src: '/serendipity-phone/img/headphone/akg_k52_2.jpg' }
       ]
     }
   }
