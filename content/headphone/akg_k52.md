@@ -12,9 +12,7 @@ weight = 1
 
 <!--more-->
 
----
-
-<div id="app">
+<div id="images">
   <v-app id="inspire" style="height:700px;">
     <v-carousel light hide-delimiters style="height:700px;">
       <v-carousel-item
@@ -29,7 +27,6 @@ weight = 1
 <div id="page-links">
 <page-link v-bind:link="link" ></page-link>
 </div>
-
 
 ---
 
@@ -54,8 +51,8 @@ weight = 1
 
 <script>
 new Vue({
-  el: '#app',
-  data () {
+  el: '#images',
+  data() {
     return {
       items: [
         { src: '/serendipity-phone/img/headphone/akg_k52.jpg' },

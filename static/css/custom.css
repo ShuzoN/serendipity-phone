@@ -28,3 +28,6 @@ td {
 .mTpx5 {
   margin-top:5px;
 }
+.application--wrap {
+  min-height: 1vh !important;
+}
