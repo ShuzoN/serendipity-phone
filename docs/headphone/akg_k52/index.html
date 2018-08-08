@@ -27,6 +27,9 @@
 
 
 <link href="https://shuzon.github.io/serendipity-phone/css/custom.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 <link rel="shortcut icon" href="https://shuzon.github.io/serendipity-phone/img/favicon.png">
 
 
@@ -53,6 +56,7 @@ if (!doNotTrack) {
 <script src="https://shuzon.github.io/serendipity-phone/js/owl.carousel.min.js"></script>
 <script src="https://shuzon.github.io/serendipity-phone/js/front.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
 
   <div id="all">
       <div class="container-fluid">
@@ -126,7 +130,17 @@ if (!doNotTrack) {
 
 <hr />
 
-<p><img src="https://shuzon.github.io/serendipity-phone/img/headphone/akg_k52.jpg" alt="phone" /></p>
+<div id="app">
+  <v-app id="inspire">
+    <v-carousel hide-delimiters light>
+      <v-carousel-item
+        v-for="(item,i) in items"
+        :key="i"
+        :src="item.src"
+      ></v-carousel-item>
+    </v-carousel>
+  </v-app>
+</div>
 
 <div id="page-links">
 <page-link v-bind:link="link" ></page-link>
@@ -154,6 +168,18 @@ if (!doNotTrack) {
 <script src="https://shuzon.github.io/serendipity-phone/js/headphone/audio-track.js"></script>
 
 <script>
+new Vue({
+  el: '#app',
+  data () {
+    return {
+      items: [
+        { src: '/serendipity-phone/img/headphone/akg_k52.jpg' },
+        { src: '/serendipity-phone/img/headphone/akg_k52.jpg' }
+      ]
+    }
+  }
+})
+
 new Vue({ 
   el: '#spec',
   data: {
