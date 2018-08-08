@@ -14,15 +14,9 @@ weight = 1
 
 ---
 
-![phone][1]
-
-<div id="page-links">
-<page-link v-bind:link="link" ></page-link>
-</div>
-
 <div id="app">
   <v-app id="inspire">
-    <v-carousel>
+    <v-carousel hide-delimiters light>
       <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
@@ -31,6 +25,11 @@ weight = 1
     </v-carousel>
   </v-app>
 </div>
+
+<div id="page-links">
+<page-link v-bind:link="link" ></page-link>
+</div>
+
 
 ---
 
