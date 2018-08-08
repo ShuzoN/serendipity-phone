@@ -2,6 +2,7 @@ Vue.component('page-link', {
   props: ['link'],
   delimiters: ['${', '}'],
   template: `
+<v-app>
   <table>
     <tr>
       <td v-if="link.official">
@@ -21,5 +22,7 @@ Vue.component('page-link', {
       </td>
     </tr>
   </table>
+</v-app>
+
   `
 });
