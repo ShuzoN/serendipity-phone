@@ -20,6 +20,18 @@ weight = 1
 <page-link v-bind:link="link" ></page-link>
 </div>
 
+<div id="app">
+  <v-app id="inspire">
+    <v-carousel>
+      <v-carousel-item
+        v-for="(item,i) in items"
+        :key="i"
+        :src="item.src"
+      ></v-carousel-item>
+    </v-carousel>
+  </v-app>
+</div>
+
 ---
 
 #### Sound 
@@ -42,6 +54,18 @@ weight = 1
 <script src="/js/headphone/audio-track.js"></script>
 
 <script>
+new Vue({
+  el: '#app',
+  data () {
+    return {
+      items: [
+        { src: '/serendipity-phone/img/headphone/akg_k52.jpg' },
+        { src: '/serendipity-phone/img/headphone/akg_k52.jpg' }
+      ]
+    }
+  }
+})
+
 new Vue({ 
   el: '#spec',
   data: {
