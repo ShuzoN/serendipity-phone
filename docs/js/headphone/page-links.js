@@ -2,11 +2,12 @@ Vue.component('page-link', {
   props: ['link'],
   delimiters: ['${', '}'],
   template: `
+<v-app>
   <table>
     <tr>
       <td v-if="link.official">
         <a v-if="link.official" v-bind:href="link.official">
-          <div>Official Page</div>
+          <v-btn color="info" depressed>Official Page</v-btn>
         </a>
       </td>
       <td v-if="link.amazon">
@@ -21,5 +22,7 @@ Vue.component('page-link', {
       </td>
     </tr>
   </table>
+</v-app>
+
   `
 });

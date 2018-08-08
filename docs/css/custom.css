@@ -30,4 +30,5 @@ td {
 }
 .application--wrap {
   min-height: 1vh !important;
+  background-color: #ffffff;
 }
