@@ -6,7 +6,7 @@ Vue.component('page-link', {
     <tr>
       <td v-if="link.official">
         <a v-if="link.official" v-bind:href="link.official">
-          <div>Official Page</div>
+          <v-btn color="info" depressed>Official Page</v-btn>
         </a>
       </td>
       <td v-if="link.amazon">
