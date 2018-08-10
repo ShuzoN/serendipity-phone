@@ -13,19 +13,11 @@ weight = 1
 <!--more-->
 
 <div id="images">
-  <v-app id="inspire" style="height:700px;">
-    <v-carousel light hide-delimiters style="height:700px;">
-      <v-carousel-item
-        v-for="(item,i) in items"
-        :key="i"
-        :src="item.src"
-      ></v-carousel-item>
-    </v-carousel>
-  </v-app>
+  <carousel v-bind:items="items" ></carousel>
 </div>
 
 <div id="page-links">
-<page-link v-bind:link="link" ></page-link>
+  <page-link v-bind:link="link" ></page-link>
 </div>
 
 ---
@@ -45,6 +37,7 @@ weight = 1
 <product-specification v-bind:spec="spec" ></product-specification>
 </div>
 
+<script src="/js/headphone/carousel.js"></script>
 <script src="/js/headphone/page-links.js"></script>
 <script src="/js/headphone/spec.js"></script>
 <script src="/js/headphone/audio-track.js"></script>
@@ -52,13 +45,13 @@ weight = 1
 <script>
 new Vue({
   el: '#images',
-  data() {
-    return {
-      items: [
-        { src: '/serendipity-phone/img/headphone/akg_k52.jpg' },
-        { src: '/serendipity-phone/img/headphone/akg_k52_2.jpg' }
-      ]
-    }
+  data: {
+    items: [
+      { src: '/serendipity-phone/img/headphone/akg_k52.jpg' },
+      { src: '/serendipity-phone/img/headphone/akg_k52_2.jpg' },
+      { src: '/serendipity-phone/img/headphone/akg_k52_3.jpg' },
+      { src: '/serendipity-phone/img/headphone/akg_k52_4.jpg' }
+    ]
   }
 })
 
