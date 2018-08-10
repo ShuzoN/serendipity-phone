@@ -32,6 +32,6 @@ td {
   min-height: 1vh !important;
   background-color: #ffffff;
 }
-.img-responsive {
-    margin: 0 auto;
+#phone-img-carousel {
+  height:700px;
 }
