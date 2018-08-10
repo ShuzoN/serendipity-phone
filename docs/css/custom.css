@@ -34,7 +34,4 @@ td {
 }
 .img-responsive {
     margin: 0 auto;
-    object-fit: contain;
-    width:auto;
-    height:100%;
 }
