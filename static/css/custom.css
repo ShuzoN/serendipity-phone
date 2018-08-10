@@ -32,3 +32,9 @@ td {
   min-height: 1vh !important;
   background-color: #ffffff;
 }
+.img-responsive {
+    margin: 0 auto;
+    object-fit: contain;
+    width:auto;
+    height:100%;
+}
