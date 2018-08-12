@@ -14,7 +14,9 @@ weight = 1
 
 ---
 
-![phone][1]
+<div id="images">
+  <carousel v-bind:items="items" ></carousel>
+</div>
 
 <div id="page-links">
 <page-link v-bind:link="link" ></page-link>
@@ -37,11 +39,22 @@ weight = 1
 <product-specification v-bind:spec="spec" ></product-specification>
 </div>
 
+<script src="/js/headphone/carousel.js"></script>
 <script src="/js/headphone/page-links.js"></script>
 <script src="/js/headphone/spec.js"></script>
 <script src="/js/headphone/audio-track.js"></script>
 
 <script>
+new Vue({
+  el: '#images',
+  data: {
+    items: [
+      { src: '/serendipity-phone/img/headphone/sony_mdr_cd900st.jpg' },
+      { src: '/serendipity-phone/img/headphone/sony_mdr_cd900st_2.jpg' }
+    ]
+  }
+})
+
 new Vue({
   el: '#spec',
   data: {
