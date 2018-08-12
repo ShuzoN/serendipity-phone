@@ -8,9 +8,6 @@ weight = 1
 +++
 [1]: /img/headphone/soundhouse_cph7000.jpg
 
-
-<p class="txtR">¥4300</p>  
-
 <!--more-->
 
 ---

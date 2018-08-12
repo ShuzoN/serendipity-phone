@@ -8,8 +8,6 @@ weight = 1
 +++
 [1]: /img/headphone/sony_mdr_cd900st.jpg
 
-<p class="txtR">¥16000</p>  
-
 <!--more-->
 
 ---

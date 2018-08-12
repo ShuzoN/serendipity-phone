@@ -9,8 +9,6 @@ weight = 1
 
 [1]: /img/headphone/shure_srh1540.jpg
 
-<p class="txtR">¥40000</p>
-
 <!--more-->
 
 ---
