@@ -124,13 +124,13 @@ if (!doNotTrack) {
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>SONY MDR-CD900ST</h1>
-         <p class="txtR">¥16000</p>  
-
-<p></p>
+         <p></p>
 
 <hr />
 
-<p><img src="https://shuzon.github.io/serendipity-phone/img/headphone/sony_mdr_cd900st.jpg" alt="phone" /></p>
+<div id="images">
+  <carousel v-bind:items="items" ></carousel>
+</div>
 
 <div id="page-links">
 <page-link v-bind:link="link" ></page-link>
@@ -153,11 +153,22 @@ if (!doNotTrack) {
 <product-specification v-bind:spec="spec" ></product-specification>
 </div>
 
+<script src="https://shuzon.github.io/serendipity-phone/js/headphone/carousel.js"></script>
 <script src="https://shuzon.github.io/serendipity-phone/js/headphone/page-links.js"></script>
 <script src="https://shuzon.github.io/serendipity-phone/js/headphone/spec.js"></script>
 <script src="https://shuzon.github.io/serendipity-phone/js/headphone/audio-track.js"></script>
 
 <script>
+new Vue({
+  el: '#images',
+  data: {
+    items: [
+      { src: '/serendipity-phone/img/headphone/sony_mdr_cd900st.jpg' },
+      { src: '/serendipity-phone/img/headphone/sony_mdr_cd900st_2.jpg' }
+    ]
+  }
+})
+
 new Vue({
   el: '#spec',
   data: {
