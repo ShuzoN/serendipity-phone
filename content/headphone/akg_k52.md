@@ -6,7 +6,6 @@ image = "/img/headphone/akg_k52.jpg"
 showonlyimage = false
 weight = 1
 +++
-[1]: /img/headphone/akg_k52.jpg
 
 <!--more-->
 

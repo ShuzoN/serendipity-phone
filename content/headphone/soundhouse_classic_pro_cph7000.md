@@ -6,13 +6,12 @@ image = "/img/headphone/soundhouse_cph7000.jpg"
 showonlyimage = false
 weight = 1
 +++
-[1]: /img/headphone/soundhouse_cph7000.jpg
 
 <!--more-->
 
----
-
-![phone][1]
+<div id="images">
+  <carousel v-bind:items="items" ></carousel>
+</div>
 
 <div id="page-links">
 <page-link v-bind:link="link" ></page-link>
@@ -20,7 +19,7 @@ weight = 1
 
 ---
 
-#### Sound 
+<h4 id="sound"><i class="fa fa-headphones mr5px"></i>Sound</h4>
 
 <div id="audio-tracks">
 <audio-track
@@ -35,11 +34,24 @@ weight = 1
 <product-specification v-bind:spec="spec" ></product-specification>
 </div>
 
+<script src="/js/headphone/carousel.js"></script>
 <script src="/js/headphone/page-links.js"></script>
 <script src="/js/headphone/spec.js"></script>
 <script src="/js/headphone/audio-track.js"></script>
 
 <script>
+new Vue({
+  el: '#images',
+  data: {
+    items: [
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000.jpg' },
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000_2.jpg' },
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000_3.jpg' },
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000_4.jpg' }
+    ]
+  }
+})
+
 new Vue({ 
   el: '#spec',
   data: {
