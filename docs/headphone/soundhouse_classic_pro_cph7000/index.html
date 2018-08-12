@@ -29,6 +29,7 @@
 <link href="https://shuzon.github.io/serendipity-phone/css/custom.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 <link rel="shortcut icon" href="https://shuzon.github.io/serendipity-phone/img/favicon.png">
 
@@ -126,9 +127,9 @@ if (!doNotTrack) {
          <h1>SOUND HOUSE CLASSIC PRO CHP7000</h1>
          <p></p>
 
-<hr />
-
-<p><img src="https://shuzon.github.io/serendipity-phone/img/headphone/soundhouse_cph7000.jpg" alt="phone" /></p>
+<div id="images">
+  <carousel v-bind:items="items" ></carousel>
+</div>
 
 <div id="page-links">
 <page-link v-bind:link="link" ></page-link>
@@ -136,7 +137,7 @@ if (!doNotTrack) {
 
 <hr />
 
-<h4 id="sound">Sound</h4>
+<h4 id="sound"><i class="fa fa-headphones mr5px"></i>Sound</h4>
 
 <div id="audio-tracks">
 <audio-track
@@ -151,11 +152,24 @@ if (!doNotTrack) {
 <product-specification v-bind:spec="spec" ></product-specification>
 </div>
 
+<script src="https://shuzon.github.io/serendipity-phone/js/headphone/carousel.js"></script>
 <script src="https://shuzon.github.io/serendipity-phone/js/headphone/page-links.js"></script>
 <script src="https://shuzon.github.io/serendipity-phone/js/headphone/spec.js"></script>
 <script src="https://shuzon.github.io/serendipity-phone/js/headphone/audio-track.js"></script>
 
 <script>
+new Vue({
+  el: '#images',
+  data: {
+    items: [
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000.jpg' },
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000_2.jpg' },
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000_3.jpg' },
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000_4.jpg' }
+    ]
+  }
+})
+
 new Vue({ 
   el: '#spec',
   data: {
