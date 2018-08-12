@@ -6,7 +6,7 @@ Vue.component('audio-track', {
   <div class="center">
     <iframe width="250px" frameborder="no" v-bind:src="track.viewingTrack"></iframe>
   </div>
-  <p class="mTpx5">This site uses NCS release audio.</p>
+  <p class="mTpx5">このサイトはNCS(著作権フリー曲)を利用しています.</p>
 
   <h5>Sample Tracks</h5>
   <ul>

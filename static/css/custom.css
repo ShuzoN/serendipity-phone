@@ -33,6 +33,5 @@ td {
   background-color: #ffffff;
 }
 #phone-img-carousel {
-  min-height:600px;
   object-fit: contain;
 }
