@@ -9,9 +9,7 @@ weight = 1
 
 <!--more-->
 
-<div id="images">
-  <carousel v-bind:items="items" ></carousel>
-</div>
+{{< images >}}
 
 {{< page-links >}}
 
@@ -26,7 +24,6 @@ weight = 1
 <product-specification v-bind:spec="spec" ></product-specification>
 </div>
 
-<script src="/js/headphone/carousel.js"></script>
 <script src="/js/headphone/spec.js"></script>
 
 <script>
