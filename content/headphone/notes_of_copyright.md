@@ -9,4 +9,14 @@ weight = 1
 
 <!--more-->
 
-視聴に利用している音源は著作権フリー(NCS)の楽曲を利用しています.  
+<p class="mTpx5">このサイトはNCS(著作権フリー曲)を利用しています.</p>
+
+<h5>使用楽曲</h5>
+<ul>
+  <li>
+    <a href="https://www.youtube.com/watch?v=bM7SZ5SBzyY">Alan Walker - Fade</a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/audiolibrary/music">YouTube Audio Library</a>
+  </li>
+</ul>
