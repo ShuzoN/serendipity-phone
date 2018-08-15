@@ -10,7 +10,6 @@ weight = 1
 <!--more-->
 
 {{< images >}}
-
 {{< page-links >}}
 
 ---
@@ -20,11 +19,7 @@ weight = 1
 
 ---
 
-<div id="spec">
-<product-specification v-bind:spec="spec" ></product-specification>
-</div>
-
-<script src="/js/headphone/spec.js"></script>
+{{< spec >}}
 
 <script>
 new Vue({
