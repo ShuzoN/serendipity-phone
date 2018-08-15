@@ -13,9 +13,7 @@ weight = 1
   <carousel v-bind:items="items" ></carousel>
 </div>
 
-<div id="page-links">
-  <page-link v-bind:link="link" ></page-link>
-</div>
+{{< page-links >}}
 
 ---
 
@@ -29,7 +27,6 @@ weight = 1
 </div>
 
 <script src="/js/headphone/carousel.js"></script>
-<script src="/js/headphone/page-links.js"></script>
 <script src="/js/headphone/spec.js"></script>
 
 <script>
