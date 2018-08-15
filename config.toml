@@ -5,8 +5,6 @@ baseurl = "https://shuzon.github.io/serendipity-phone"
 canonifyurls = true
 hasCJKLanguage = true
 googleAnalytics = "UA-123790916-1"
-[permalinks]
-    headphone = "/:slug/:title/"
 
 [params]
   style = "default"

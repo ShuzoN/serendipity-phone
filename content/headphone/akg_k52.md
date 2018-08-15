@@ -19,14 +19,8 @@ weight = 1
 
 ---
 
-#### Sound 
-
-<div id="audio-tracks">
-<audio-track
-  v-for="track in tracks"
-  v-bind:track="track"
-></audio-track>
-</div>
+{{< audio-track >}}
+[視聴楽曲の著作権について]({{< ref "headphone/notes_of_copyright.md" >}})
 
 ---
 
@@ -37,7 +31,6 @@ weight = 1
 <script src="/js/headphone/carousel.js"></script>
 <script src="/js/headphone/page-links.js"></script>
 <script src="/js/headphone/spec.js"></script>
-<script src="/js/headphone/audio-track.js"></script>
 
 <script>
 new Vue({
