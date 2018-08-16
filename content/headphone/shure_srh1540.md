@@ -7,42 +7,44 @@ showonlyimage = false
 weight = 1
 +++
 
-[1]: /img/headphone/shure_srh1540.jpg
-
 <!--more-->
 
 ---
 
-![phone][1]
 
+{{< images >}}
+<table>
+<td>
 <img src="/img/vgp/2016award.jpg" alt="vgp2016award" width="80px" style="float: left;" />
-
-<div id="page-links">
-<page-link v-bind:link="link" ></page-link>
-</div>
-
----
-
-#### Sound 
-
-<div id="audio-tracks">
-<audio-track
-  v-for="track in tracks"
-  v-bind:track="track"
-></audio-track>
-</div>
+</td>
+<td>
+{{< page-links >}}
+</td>
+</table>
 
 ---
 
-<div id="spec">
-<product-specification v-bind:spec="spec" ></product-specification>
-</div>
+{{< audio-track >}}
+[視聴楽曲の著作権について]({{< ref "headphone/notes_of_copyright.md" >}})
 
-<script src="/js/headphone/page-links.js"></script>
-<script src="/js/headphone/spec.js"></script>
-<script src="/js/headphone/audio-track.js"></script>
+---
+
+{{< spec >}}
 
 <script>
+
+new Vue({
+  el: '#images',
+  data: {
+    items: [
+      { src: '/serendipity-phone/img/headphone/shure_srh1540_1.jpg' },
+      { src: '/serendipity-phone/img/headphone/shure_srh1540_2.jpg' },
+      { src: '/serendipity-phone/img/headphone/shure_srh1540_3.jpg' },
+      { src: '/serendipity-phone/img/headphone/shure_srh1540_4.jpg' }
+    ]
+  }
+})
+
 new Vue({ 
   el: '#spec',
   data: {
