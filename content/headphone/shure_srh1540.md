@@ -2,7 +2,7 @@
 date = "2018-05-18T20:08:00+09:00"
 title = "SHURE SRH1540"
 draft = false
-image = "/img/headphone/shure_srh1540.jpg"
+image = "/img/headphone/shure_srh1540_1.jpg"
 showonlyimage = false
 weight = 1
 +++

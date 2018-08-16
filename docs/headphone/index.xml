@@ -6,10 +6,19 @@
     <description>Recent content in Headphones on Serendipity Phone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 19 May 2018 16:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 12 Aug 2018 20:06:00 +0900</lastBuildDate>
     
 	<atom:link href="https://shuzon.github.io/serendipity-phone/headphone/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Notes of Copyright</title>
+      <link>https://shuzon.github.io/serendipity-phone/headphone/notes_of_copyright/</link>
+      <pubDate>Sun, 12 Aug 2018 20:06:00 +0900</pubDate>
+      
+      <guid>https://shuzon.github.io/serendipity-phone/headphone/notes_of_copyright/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>AKG K52</title>
@@ -45,6 +54,17 @@
       
       <guid>https://shuzon.github.io/serendipity-phone/headphone/shure_srh1540/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bose SoundLink Around Ear Headphones II</title>
+      <link>https://shuzon.github.io/serendipity-phone/headphone/bose_soundlink_around_ear_headphones_ii/</link>
+      <pubDate>Mon, 13 Aug 2018 12:00:00 +0900</pubDate>
+      
+      <guid>https://shuzon.github.io/serendipity-phone/headphone/bose_soundlink_around_ear_headphones_ii/</guid>
+      <description>&lt;p&gt;comming soon&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

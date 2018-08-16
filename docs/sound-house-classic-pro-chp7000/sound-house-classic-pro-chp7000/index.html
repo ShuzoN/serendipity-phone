@@ -2,7 +2,7 @@
 <html lang="ja">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>AKG K52</title>
+<title>SOUND HOUSE CLASSIC PRO CHP7000</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -124,27 +124,21 @@ if (!doNotTrack) {
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>AKG K52</h1>
+         <h1>SOUND HOUSE CLASSIC PRO CHP7000</h1>
          <p></p>
 
-<p><div id="images">
+<div id="images">
   <carousel v-bind:items="items" ></carousel>
 </div>
 
-<script src="https://shuzon.github.io/serendipity-phone/js/headphone/carousel.js"></script>
-
-
 <div id="page-links">
-  <page-link v-bind:link="link" ></page-link>
+<page-link v-bind:link="link" ></page-link>
 </div>
-
-<script src="https://shuzon.github.io/serendipity-phone/js/headphone/page-links.js"></script>
-
-</p>
 
 <hr />
 
-<p><h4>Sound</h4>
+<h4 id="sound"><i class="fa fa-headphones mr5px"></i>Sound</h4>
+
 <div id="audio-tracks">
 <audio-track
   v-for="track in tracks"
@@ -152,28 +146,26 @@ if (!doNotTrack) {
 ></audio-track>
 </div>
 
-<script src="https://shuzon.github.io/serendipity-phone/js/headphone/audio-track.js"></script>
-
-<a href="https://shuzon.github.io/serendipity-phone/headphone/notes_of_copyright/">視聴楽曲の著作権について</a></p>
-
 <hr />
 
 <div id="spec">
 <product-specification v-bind:spec="spec" ></product-specification>
 </div>
 
+<script src="https://shuzon.github.io/serendipity-phone/js/headphone/carousel.js"></script>
+<script src="https://shuzon.github.io/serendipity-phone/js/headphone/page-links.js"></script>
 <script src="https://shuzon.github.io/serendipity-phone/js/headphone/spec.js"></script>
-
+<script src="https://shuzon.github.io/serendipity-phone/js/headphone/audio-track.js"></script>
 
 <script>
 new Vue({
   el: '#images',
   data: {
     items: [
-      { src: '/serendipity-phone/img/headphone/akg_k52.jpg' },
-      { src: '/serendipity-phone/img/headphone/akg_k52_2.jpg' },
-      { src: '/serendipity-phone/img/headphone/akg_k52_3.jpg' },
-      { src: '/serendipity-phone/img/headphone/akg_k52_4.jpg' }
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000.jpg' },
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000_2.jpg' },
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000_3.jpg' },
+      { src: '/serendipity-phone/img/headphone/soundhouse_cph7000_4.jpg' }
     ]
   }
 })
@@ -197,9 +189,7 @@ new Vue({
   data: {
     link:
       {
-        official:"http://akg.harman-japan.co.jp/product.php?id=k52",
-        amazon:"https://www.amazon.co.jp/AKG-K52/dp/B06XT8DLZV",
-        eIyahon:"http://www.e-earphone.jp/akg/k52"
+        official:"https://www.soundhouse.co.jp/products/detail/item/25126/",
       }
   }
 });
@@ -209,7 +199,7 @@ new Vue({
   data: {
     tracks: [
       {
-        viewingTrack: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+ "463726323"
+        viewingTrack: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+ "463725633"
       },
     ]
   }
