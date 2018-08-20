@@ -41,9 +41,11 @@ new Vue({
       {
         system: "Dynamic",
         design: "Closed-Back",
-        weight: "200",
-        impedance: "32Ω",
-        plug: "stereo mini (3.5mm)"
+        weight: "200g",
+        impedance: "unknown",
+        plug: "stereo mini (3.5mm)",
+        isWireless: "Yes",
+        battery: "15hour"
       }
   }
 });

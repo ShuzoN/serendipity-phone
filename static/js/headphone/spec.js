@@ -9,6 +9,8 @@ Vue.component('product-specification', {
     <p>Weight: \${ spec.weight }</p>
     <p>Impedance: \${ spec.impedance }</p>
     <p>Plug: \${ spec.plug }</p>
+    <p v-if="spec.isWireless">wireless: \${ spec.isWireless}</p>
+    <p v-if="spec.battery">battery: \${spec.battery}</p>
   </div>
   `
 });
