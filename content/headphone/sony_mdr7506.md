@@ -2,11 +2,11 @@
 date = "2018-05-19T16:00:00+09:00"
 title = "SONY MDR-7506"
 draft = false
-image = "/img/headphone/sony_mdr7506.jpg"
+image = "/img/headphone/sony_mdr7506_1.jpg"
 showonlyimage = false
 weight = 1
 +++
-[1]: /img/headphone/sony_mdr7506.jpg
+[1]: /img/headphone/sony_mdr7506_1.jpg
 
 <!--more-->
 
@@ -47,7 +47,10 @@ new Vue({
   el: '#images',
   data: {
     items: [
-      { src: '/serendipity-phone/img/headphone/sony_mdr7506.jpg' }
+      { src: '/serendipity-phone/img/headphone/sony_mdr7506_1.jpg' },
+      { src: '/serendipity-phone/img/headphone/sony_mdr7506_2.jpg' },
+      { src: '/serendipity-phone/img/headphone/sony_mdr7506_3.jpg' },
+      { src: '/serendipity-phone/img/headphone/sony_mdr7506_4.jpg' }
     ]
   }
 })
